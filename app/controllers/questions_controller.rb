@@ -4,7 +4,7 @@ class QuestionsController < ApplicationController
   end
 
   def answer
-    @search = params[:pergunta]
+    @search = params[:pergunte]
     if @search.blank?
       @answer = "I can't hear you!"
     elsif @search.downcase == "i am going to work"
